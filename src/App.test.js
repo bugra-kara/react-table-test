@@ -10,5 +10,5 @@ test('renders length of the data', async ()=> {
   const { container } = render(<Table data={data} />);
   // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
   const rows = container.querySelectorAll('tbody tr');
-  expect(data.length).toBe(data.length);
+  expect(rows.length).toBe(data.length);
 })
